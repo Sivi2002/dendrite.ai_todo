@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #ff6b6b, #f06595);
+    background: linear-gradient(135deg, #87CEEB, #FFC5C5);
     color: #fff;
     min-height: 100vh;
     display: flex;
@@ -49,7 +49,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: #ff6b6b;
+    background-color: #FFC5C5;
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
@@ -61,12 +61,12 @@ button {
 }
 
 button:hover {
-    background-color: #ff4c4c;
+    background-color: #87CEEB;
     transform: translateY(-2px);
 }
 
 a {
-    color: #ff6b6b;
+    color: #FFC5C5;
     text-decoration: none;
     font-weight: 600;
 }
@@ -79,4 +79,29 @@ p {
     color: #333;
     font-size: 1rem;
     margin: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .form-label {
+        font-size: 0.9rem;
+    }
+    input[type="text"],
+    input[type="password"] {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
 }
