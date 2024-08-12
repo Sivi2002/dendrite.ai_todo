@@ -1,4 +1,4 @@
 # dendrite.ai_todo
 
-user = admin
+user = admin,
 password = admin1
