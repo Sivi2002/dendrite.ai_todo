@@ -3,29 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    <title>Payment Successful</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/payment.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Register</h1>
-        <form action="{{ url_for('auth.register') }}" method="POST">
-            {{ form.hidden_tag() }}
-            <p>
-                {{ form.username.label(class="form-label") }}<br>
-                {{ form.username(size=32) }}
-            </p>
-            <p>
-                {{ form.password.label(class="form-label") }}<br>
-                {{ form.password(size=32) }}
-            </p>
-            <p>
-                {{ form.confirm_password.label(class="form-label") }}<br>
-                {{ form.confirm_password(size=32) }}
-            </p>
-            <button type="submit">Register</button>
-        </form>
-        <p>Already have an account? <a href="{{ url_for('auth.login') }}">Login here</a></p>
+        <h1 class="mt-5">Payment Successful!</h1>
+        <p>Thank you for your purchase! You now have access to pro features.</p>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Go to Your Todos</a>
     </div>
 </body>
 </html>
