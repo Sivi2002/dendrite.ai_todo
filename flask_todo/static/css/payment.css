@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, #87CEEB, #FFC5C5);
     color: #fff;
     min-height: 100vh;
     display: flex;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .btn-primary {
-    background-color: #feb47b;
+    background-color: #FFC5C5;
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
@@ -41,6 +41,20 @@ h1 {
 }
 
 .btn-primary:hover {
-    background-color: #ff6f61;
+    background-color: #87CEEB;
     transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
